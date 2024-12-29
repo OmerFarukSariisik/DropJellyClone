@@ -1,0 +1,16 @@
+{
+    "name": "DropJelly.Controllers",
+    "rootNamespace": "",
+    "references": [
+        "DropJelly.Data"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,4 @@
+{
+	"name": "DropJelly.Managers",
+	"references":[ "DropJelly.Data", "DropJelly.Controllers" ]
+}
