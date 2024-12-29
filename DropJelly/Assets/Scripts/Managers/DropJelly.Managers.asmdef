@@ -1,4 +1,4 @@
 {
 	"name": "DropJelly.Managers",
-	"references":[ "DropJelly.Data", "DropJelly.Controllers" ]
+	"references":[ "DropJelly.Data", "DropJelly.Controllers", "UniTask" ]
 }

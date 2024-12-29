@@ -1,11 +1,11 @@
 {
     "name": "DropJelly.Data.Editor",
     "rootNamespace": "",
-    "references": [],
-    "includePlatforms": [],
-    "excludePlatforms": [
+    "references": ["GUID:fde4162461b876247afa76b1d1912f4d"],
+    "includePlatforms": [
         "Editor"
     ],
+    "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],

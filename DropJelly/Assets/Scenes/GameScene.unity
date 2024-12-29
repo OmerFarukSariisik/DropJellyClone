@@ -154,6 +154,7 @@ Transform:
   - {fileID: 1511588452}
   - {fileID: 1087181700}
   - {fileID: 1645671749}
+  - {fileID: 1031581644}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &506328522
@@ -216,8 +217,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -241,13 +242,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506328522}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalRotation: {x: -0.08715578, y: 0, z: 0, w: 0.9961947}
+  m_LocalPosition: {x: 0, y: -1.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -10, y: 0, z: 0}
 --- !u!1 &919906712
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +343,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1031581643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1031581644}
+  m_Layer: 0
+  m_Name: newJellyPositioner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1031581644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031581643}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 408733801}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1087181699
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +501,7 @@ GameObject:
   - component: {fileID: 1591022502}
   - component: {fileID: 1591022501}
   - component: {fileID: 1591022500}
+  - component: {fileID: 1591022506}
   - component: {fileID: 1591022505}
   - component: {fileID: 1591022504}
   m_Layer: 0
@@ -490,8 +523,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 296ab5982e30eac4cace01cdf043309f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropManager: {fileID: 1591022506}
   jellyController: {fileID: 2425408235794749990, guid: 442c65d77cf207e45933253fbb20315d, type: 3}
   jellyParent: {fileID: 1645671749}
+  newJellyPositioner: {fileID: 1031581644}
+  randomJellies:
+  - jellyParts:
+    - type: 0
+      size: 9
+  - jellyParts:
+    - type: 0
+      size: 5
+    - type: 0
+      size: 8
+  - jellyParts:
+    - type: 0
+      size: 7
+    - type: 0
+      size: 6
+  - jellyParts:
+    - type: 0
+      size: 1
+    - type: 0
+      size: 2
+    - type: 0
+      size: 8
+  - jellyParts:
+    - type: 0
+      size: 1
+    - type: 0
+      size: 3
+    - type: 0
+      size: 7
+  - jellyParts:
+    - type: 0
+      size: 3
+    - type: 0
+      size: 4
+    - type: 0
+      size: 5
+  - jellyParts:
+    - type: 0
+      size: 2
+    - type: 0
+      size: 4
+    - type: 0
+      size: 6
+  - jellyParts:
+    - type: 0
+      size: 1
+    - type: 0
+      size: 2
+    - type: 0
+      size: 3
+    - type: 0
+      size: 4
 --- !u!114 &1591022501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,6 +606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridManager: {fileID: 1591022501}
   jellyManager: {fileID: 1591022500}
+  dropManager: {fileID: 1591022506}
 --- !u!4 &1591022503
 Transform:
   m_ObjectHideFlags: 0
@@ -559,6 +646,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb87c631a1d73a438aed07b28031f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1591022506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591022499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d002af366a7c6cd4fbd53c8680475d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 506328524}
 --- !u!1 &1645671748
 GameObject:
   m_ObjectHideFlags: 0

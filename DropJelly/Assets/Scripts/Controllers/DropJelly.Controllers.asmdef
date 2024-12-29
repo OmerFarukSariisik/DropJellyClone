@@ -2,7 +2,9 @@
     "name": "DropJelly.Controllers",
     "rootNamespace": "",
     "references": [
-        "DropJelly.Data"
+        "DropJelly.Data",
+        "UniTask.DOTween",
+        "UniTask"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
