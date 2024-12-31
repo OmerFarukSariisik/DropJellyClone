@@ -4,7 +4,8 @@
     "references": [
         "DropJelly.Data",
         "UniTask.DOTween",
-        "UniTask"
+        "UniTask",
+        "DropJelly.Util"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

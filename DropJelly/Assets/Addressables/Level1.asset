@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156a2ac960b156c41bc34c79a9b810bd, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  goal: 10
+  targetCount: 10
+  moveCount: 10
   rows: 5
   columns: 5
   grid:
@@ -23,7 +24,7 @@ MonoBehaviour:
     item: 1
   - jelly:
       jellyParts:
-      - type: 1
+      - type: 3
         size: 5
       - type: 2
         size: 8
@@ -32,9 +33,9 @@ MonoBehaviour:
       jellyParts:
       - type: 1
         size: 1
-      - type: 2
-        size: 3
       - type: 3
+        size: 3
+      - type: 2
         size: 7
     item: 1
   - jelly:

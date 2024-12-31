@@ -1,12 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Data
 {
     [CreateAssetMenu(fileName = "NewLevel", menuName = "DropJelly/Level", order = 1)]
     public class LevelData : ScriptableObject
     {
-        public int goal;
+        public int targetCount;
+        public int moveCount;
         public int rows;
         public int columns;
         public List<Cell> grid;
@@ -70,5 +72,13 @@ namespace Data
         Right = 7,
         Bottom = 8,
         Whole = 9,
+    }
+
+    public enum Direction
+    {
+        Up = 0,
+        Down = 1,
+        Right = 2,
+        Left = 3
     }
 }

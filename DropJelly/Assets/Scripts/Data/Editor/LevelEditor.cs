@@ -11,7 +11,8 @@ namespace Data.Editor
             var levelData = (LevelData)target;
 
             // Input fields for rows, columns and goal.
-            levelData.goal = EditorGUILayout.IntField("Goal", levelData.goal);
+            levelData.targetCount = EditorGUILayout.IntField("Target Count", levelData.targetCount);
+            levelData.moveCount = EditorGUILayout.IntField("Move Count", levelData.moveCount);
             levelData.rows = EditorGUILayout.IntField("Rows", levelData.rows);
             levelData.columns = EditorGUILayout.IntField("Columns", levelData.columns);
 
